@@ -119,7 +119,6 @@ router.delete("/users/delete/:id", isUser, deleteUser);
 router.get("/logout", logout);
 
 // ************* API ******************
-
 // Ruta para ver todos los usuarios
 router.get("/api/users", async (req, res) => {
   try {

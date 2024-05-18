@@ -10,7 +10,7 @@ const confirmModifyProduct = async (req, res) => {
     if (!product) {
       // Si no se encuentra el producto, renderiza una página de error
       const errorPagePath = path.join(__dirname, "../../views/404notfound");
-      return res.render(errorPagePath, { message: "Product not found" });
+      return res.render(errorPagePath, { message: "Producto no encontrado" });
     }
 
     product.NameProduct = req.body.productName;
